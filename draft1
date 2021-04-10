@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fruktur&family=Inter:wght@200;300;400;600;700;800;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff7f7;
+  padding: 20px;
+  font-family:'Inter', sans-serif;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 155px;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+h5 {
+  color: grey
+}
+
+ul {
+  list-style-type:circle
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.column-intro {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  kerning:5pt
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #13613c;
+}
+
+.container {
+  border-radius: 100px;
+  background-color: #f2f2f2;
+  padding: 80px;
+}
+
+</style>
+</head>
+
+<body>
+<!-- Main-->
+<div class="main">
+ 
+<!-- Header Part-->
+<div class="header">
+    <img src="icon.PNG" width="180" height="180" alt="icon">
+    <h1>KRISTA RODRIGO</h1>
+    <h2>Graphic Design + Brand Identity</h2>
+    <h5> 21 · Female · Manila, PH · @rodrigokrista </h5>
+</div>
+<br>
+<br>
+<hr>
+
+<br>
+<br>
+<!-- About-->
+<div class="row">
+    <div class="column-intro">
+        <h3>ABOUT</h3>
+        <p>I help purpose-driven people visualize their ideas by providing designs grounded in simplicity and function. <br>
+            I had been described as daring, a bit analytical, and versatile and it translates to my works too. </p>
+    </div>
+
+<!-- Education-->    
+    <div class="column-intro">
+        <h3>EDUCATION</h3>
+        <ul>
+            <li>iAcademy (2016 - 2022)</li>
+            <li>St. Paul College of Paranaque (2006 - 2016)</li>
+            <li>Escuela de San Dionisio (2015)</li>
+          </ul>
+    </div>
+    
+</div>
+
+    <br>
+    <br>
+<!-- Personal Works -->
+<h3>PERSONAL WORKS</h3>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="tge-thumbnail.jpg" alt="thegoodearth" style="width:100%">
+      <h3>The Good Earth</h3>
+      <h5>BRAND IDENTITY & PACKAGING</h5>
+      <p>A brand identity and packaging project for a local health product line.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="manila-campaign-thumbnail.jpg" alt="manilacampaign" style="width:100%">
+      <h3>Manila Campaign</h3>
+      <h5>BRANDING & ADVERTISING</h5>
+      <p>Lead a group of artists and designers to come up with a brand identity and campaign ideas to promote the City of Manila.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="ccc-thumbnail.jpg" alt="ccc2019" style="width:100%">
+      <h3>CCC 2019</h3>
+      <h5>GRAPHIC DESIGN</h5>
+      <p>Was invited to create a poster and brochure for the Climate Change Consciousness 2019 exhibit held at One Esplanade.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="clarity-manual.jpg" alt="clarity-manual" style="width:100%">
+      <h3>Clarity Manual</h3>
+      <h5>GRAPHIC DESIGN</h5>
+      <p>A personal project centered of creating a self-help and self-help manual for destressing.</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<!-- Contact Form-->
+<div class="contactform">
+    <h2>Let's work together.</h2>
+    <br>
+    <form action="action_page.php">
+  
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="First & Last Name">
+  
+      <label for="email">E-Mail</label>
+      <input type="text" id="email" name="email" placeholder="youremail@gmail.com">
+  
+      <label for="location">Location</label>
+      <select id="location" name="location">
+        <option value="philippines">Asia</option>
+        <option value="northamerica">North America</option>
+        <option value="southamerica">South America</option>
+        <option value="europe">Europe</option>
+        <option value="africa">Africa</option>
+        <option value="australia">Australia</option>
+      </select>
+  
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="What can I help you with?" style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+
+</div>
+
+</body>
+</html>
